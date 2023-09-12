@@ -1,0 +1,55 @@
+GET http://localhost:3000/api/v1
+###
+GET http://localhost:3000/api/v1/products
+###
+GET http://localhost:3000/api/v1/products/64ff5299fb1e57782fdecb6e
+###
+POST http://localhost:3000/api/v1/products
+Content-Type: application/json
+
+{
+    "name": "tablet",
+    "price": 3000000,
+    "stock": 10,
+    "status": true
+}
+###
+DELETE http://localhost:3000/api/v1/products/64ff54679436a1baf5de2e3c
+###
+PATCH http://localhost:3000/api/v1/products/64ff5299fb1e57782fdecb6e
+Content-Type: application/json
+
+{
+    "name": "tablet",
+    "price": 1000000,
+    "stock": 10,
+    "status": true
+}
+###
+GET http://localhost:3000/api/v2
+###
+GET http://localhost:3000/api/v2/products
+###
+GET http://localhost:3000/api/v2/products/64ff5ef33c87f4f2d4f3648d
+###
+POST http://localhost:3000/api/v2/products
+Content-Type: application/json
+
+{
+    "name": "buku",
+    "price": 5000,
+    "stock": 10,
+    "status": true
+}
+###
+DELETE http://localhost:3000/api/v2/products/64ff61c966a836943fd559c1
+###
+PATCH http://localhost:3000/api/v2/products/64ff5f1f3c87f4f2d4f3648f
+Content-Type: application/json
+
+{
+    "name": "buku",
+    "price": 3000,
+    "stock": 10,
+    "status": true
+}
